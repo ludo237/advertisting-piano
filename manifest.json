@@ -1,0 +1,17 @@
+{
+    "name": "Load Sound Visualizer",
+    "version": "0.1",
+    "manifest_version": 2,
+    "description": "Plays a note whenever a resource was loaded",
+    "background": {
+        "scripts": ["base64-binary.js", "MIDI.js", "background.js"]
+    },
+    "permissions": [
+        "background",
+        "webRequest",
+        "http://*/*",
+        "https://*/*"
+    ],
+
+    "content_security_policy": "script-src 'sha256-S7pLnjTm41CLzP+fdiE9FweeHwT9YQc5g1Cp3x90V6A='; object-src 'self'"
+}
